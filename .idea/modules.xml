@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Book Sorter/Book Sorter.iml" filepath="$PROJECT_DIR$/Book Sorter/Book Sorter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Fixture Generator/Fixture Generator.iml" filepath="$PROJECT_DIR$/Fixture Generator/Fixture Generator.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java102_Exercise.iml" filepath="$PROJECT_DIR$/Java102_Exercise.iml" />
     </modules>
   </component>
