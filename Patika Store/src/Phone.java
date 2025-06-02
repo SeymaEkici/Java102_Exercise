@@ -6,8 +6,9 @@ public class Phone extends Product{
 
     private PhoneMemorySize phoneMemorySize;
     private PhoneColor phoneColor;
+    private int cameraMP;
 
-    public Phone (int id, String name, ArrayList<String> brands, int price, int discountPercentage, int stock, final double screenSize, final int batteryCapacity, final int ram, PhoneMemorySize phoneMemorySize, PhoneColor phoneColor){
+    public Phone (int id, String name, ArrayList<String> brands, int price, int discountPercentage, int stock, final double screenSize, final int batteryCapacity, final int ram, PhoneMemorySize phoneMemorySize, PhoneColor phoneColor, int cameraMP){
         super(id, name, "Phone", price, discountPercentage, stock, screenSize, batteryCapacity, ram, brands);
         this.screenSize = 6.1;
         this.batteryCapacity = 4000;
@@ -23,11 +24,18 @@ public class Phone extends Product{
         }
     }
 
+    public int getCameraMP() {
+        return cameraMP;
+    }
+
     public PhoneMemorySize getPhoneMemorySize() {
         return phoneMemorySize;
     }
 
     public PhoneColor getPhoneColor() {
         return phoneColor;
+    }
+
+    public int setCameraMP(int cameraMP) {
     }
 }

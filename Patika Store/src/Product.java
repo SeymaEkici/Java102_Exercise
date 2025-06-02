@@ -3,6 +3,7 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
+
 public class Product {
 
     private int id;
@@ -31,6 +32,7 @@ public class Product {
 
     public Product() {
         // Default constructor
+        brands = new ArrayList<>(validBrands);
     }
 
     public Product(int id, String name, String productType, int price, int discountPercentage, int stock, double screenSize, int batteryCapacity, int ram, ArrayList<String> brands) {
@@ -44,7 +46,8 @@ public class Product {
         this.batteryCapacity = batteryCapacity;
         this.ram = ram;
         this.brands = brands;
-        Collections.sort(this.brands);
+
+        brands = new ArrayList<>(validBrands);
     }
 
     public int getId() {
@@ -103,11 +106,12 @@ public class Product {
         return batteryCapacity;
     }
 
-    public int getram() {
+    public int getRam() {
         return ram;
     }
 
     public ArrayList<String> getBrands() {
+        Collections.sort(brands);
         return brands;
     }
 

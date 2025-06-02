@@ -10,4 +10,8 @@ public class Notebook extends Product{
         this.screenSize = 14;
         this.memory = 512;
     }
+
+    public int getMemory() {
+        return memory;
+    }
 }
